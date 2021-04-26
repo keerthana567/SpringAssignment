@@ -13,7 +13,7 @@ import java.util.List;
 @RequestMapping("/api")
 public class UserController {
     @Autowired
-    private com.example.mongodb.demo.service.UserService userService;
+  private UserService userService;
 
     @GetMapping("/token")
     public ResponseEntity<String> token(@RequestHeader(name = "Authorization") String token){
